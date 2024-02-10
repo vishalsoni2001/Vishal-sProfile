@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: #f4f4f4; */
+    /* background-color: rgb(168, 237, 158); */
+    /* background-color: #8EE4AF; */
+    /* background-image: url(https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExdHI5dHU1bWFiOHJ5dmp6am9nc3V5YnA0OTVnM2U0NWJkM3B2YXB5ZSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/oB6KlAvOuaLtxYy8l4/giphy.mp4); */
+   background-image: url(https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExOTU5cHE1eG5zZXg4bjQ4N2F6ZHJ2d3VjeXdpejZmankyanYyZ3BjbyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/BHNfhgU63qrks/giphy.gif);
+    background-size: cover;
+}
+.profile-card{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    max-width: 370px;
+    width: 100%;
+    background: #fff;
+    /* background-color: #EDF5E1; */
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    padding: 25px;
+    border-radius: 24px;
+    border: none;
+    position: relative;
+
+}
+.profile-card::before{
+   content: '';
+   position: absolute;
+   top: 0;
+   left: 0;
+   height: 36%;
+   /* or 150px */
+   width: 100%;
+   border-radius: 24px 24px 0 0;
+   /* background-color: #379683; */
+   /* background-color: rgb(246, 156, 156); */
+ 
+   /* background-color: rgb(99 67 110); */
+
+   background-color: rgb(118, 80, 131);
+
+}
+.image{
+    position: relative;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    /* background-color: #4070f4; */
+     /* background-color: #5CDB95; */
+    /* background-color: #379683; */
+    background-color:rgb(89, 110, 67);
+
+    /* background-color: rgb(168, 237, 158); */
+    
+
+    margin-bottom:10px;
+    padding: 3px;
+}
+.image .profile-img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #fff;
+
+}
+
+.profile-card .text-data{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color:#333;
+}
+.text-data .name{
+  
+    font-size: 22px;
+    font-weight: 500;
+    color: #05386B;
+}
+
+.text-data .job{
+    font-size: 15px;
+    font-weight: 400;
+    color: grey;
+   
+}
+
+.profile-card .media-buttons{
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+.media-buttons .link{
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 18px;
+    height: 34px;
+    width: 34px;
+    border-radius: 50%;
+    margin:0 8px;
+    background-color:#379683;
+   
+    text-decoration: none;
+
+}
+.profile-card .buttons{
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.buttons .button{
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    border: none;
+    border-radius: 24px;
+    margin: 0 10px;
+    padding: 8px 24px;
+    /* background-color: #379683; */
+    /* background-color:rgb(99 67 110); */
+    background-color: rgb(118, 80, 131);
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+}
+
+.buttons a{
+    text-decoration: none;
+    color:#fff;
+}
+
+
+.buttons .button:hover{
+    /* background-color: #42ae99; */
+    background-color:rgb(117, 81, 129);
+
+}
+
+.profile-card .contacts
+{
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: gray;
+    font-weight: 200;
+}
+.contacts i{
+    color: #05386B;
+    
+}
